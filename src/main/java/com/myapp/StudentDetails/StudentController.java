@@ -26,6 +26,7 @@ public class StudentController {
 
 	@GetMapping(value = "/readvalues/{age}")
 	public List<Student> read(@PathVariable int age)throws AgeException {
+		System.out.println(age);
 		return ser.read(age);
 	}
 
